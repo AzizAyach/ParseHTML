@@ -1,0 +1,981 @@
+{
+    "rss": {
+        "$": {
+            "version": "2.0",
+            "xmlns:atom": "http://www.w3.org/2005/Atom"
+        },
+        "channel": [
+            {
+                "title": [
+                    "INFOS FOOT"
+                ],
+                "link": [
+                    "http://www.matchendirect.fr"
+                ],
+                "description": [
+                    "Suivez toute l'actualité football sur MatchEnDirect.fr"
+                ],
+                "atom:link": [
+                    {
+                        "$": {
+                            "href": "http://www.matchendirect.fr/rss/info.xml",
+                            "rel": "self",
+                            "type": "application/rss+xml"
+                        }
+                    }
+                ],
+                "image": [
+                    {
+                        "url": [
+                            "http://www.matchendirect.fr/image/commun/matchendirect-rss96.png"
+                        ],
+                        "title": [
+                            "MatchEnDirect.fr"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr"
+                        ],
+                        "width": [
+                            "96"
+                        ],
+                        "height": [
+                            "96"
+                        ]
+                    }
+                ],
+                "item": [
+                    {
+                        "title": [
+                            "Disparition - J.Cruyff : \"L'héritage de mon père est toujours la\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/disparition-j-cruyff-l-heritage-de-mon-pere-est-toujours-la.html"
+                        ],
+                        "description": [
+                            "Le fis de Johann Cruyff, Jordi, déclarait il y a quelques semaines l'héritage qu'a laissé son père avec sa philosophie de jeu. La légende du football s'est éteinte jeudi à l'âge de 68 ans."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 15:40:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "950c1f511971c0f973790f04def7c4bf",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/disparition-j-cruyff-l-heritage-de-mon-pere-est-toujours-la-31118.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1914"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Disparition - La légende Johan Cruyff nous quitte"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/disparition-la-legende-johan-cruyff-nous-quitte.html"
+                        ],
+                        "description": [
+                            "Le hollandais au trois ballons d'or (1971, 1973, 1974), joueur entre autre de l'Ajax d'Amsterdam, du FC Barcelone et des Pays-Bas, vainqueur de la coupe des clubs champions comme joueur et comme entraîneur, finale du Mondial 1974, est décédé ce jeudi à l'âge de 68 ans des suites d'un cancer du poumon."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 15:30:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "4c8268797078b52e8bb898d793d74487",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/disparition-la-legende-johan-cruyff-nous-quitte-31117.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2782"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "32e j. - Pearce : \"Leicester et West Ham, un coup de frais\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/32e-j-pearce-leicester-et-west-ham-un-coup-de-frais.html"
+                        ],
+                        "description": [
+                            "L'ancien international anglais et sélectionneur des espoirs Stuart Pearce se réjouit des performances de 'petits' clubs comme Leicester et West Ham cette saison en Angleterre."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 13:40:05 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "fffcc4a1d68fa2dc91b73fee7172214a",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/32e-j-pearce-leicester-et-west-ham-un-coup-de-frais-31116.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1718"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Man. City - Pearce : \"Ils auront le meilleur entraîneur au monde\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/man-city-pearce-ils-auront-le-meilleur-entraineur-au-monde.html"
+                        ],
+                        "description": [
+                            "A défaut d'être en Ligue des Champions la saison prochaine, Manchester City pourra se consoler avec l'arrivée de Pep Guardiola qui a déjà tout gagné dans les précédents clubs où il est passé."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 13:40:05 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "9dcce257bc05092f9d5adae5f70853b3",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/man-city-pearce-ils-auront-le-meilleur-entraineur-au-monde-31115.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1735"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Attentats - Buffon : \"Réaction moins forte que lors des attaques à Paris\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/attentats-buffon-reaction-moins-forte-que-lors-des-attaques-a-paris.html"
+                        ],
+                        "description": [
+                            "Gianluigi Buffon a donné son ressenti après les attaques terroristes à Bruxelles. Le gardien italien qui a eu l'impression d'avoir une réaction \"moins forte\" que lors des attentats qui ont touché Paris en novembre dernier, a parlé de l'importance d'être toujours touché et révolté par ce genre d'événements."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 13:40:04 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "b65e200cd4b37eab5d2607f7dccfdb9d",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/attentats-buffon-reaction-moins-forte-que-lors-des-attaques-a-paris-31114.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2950"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "City - Pearce : \"Apporter du sang neuf\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/city-pearce-apporter-du-sang-neuf.html"
+                        ],
+                        "description": [
+                            "L'ancien entraîneur de Manchester City et ex-international Stuart Pearce se projette sur la saison prochaine et les chantiers qui attendent les Citizens avec leur nouveau manager Pep Guardiola."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 13:20:05 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "8c66edab584ce35c563c0286e8672170",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/city-pearce-apporter-du-sang-neuf-31113.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2350"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "L'action qui tue - Le alley-oop spectaculaire entre Paul et Jordan"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/l-action-qui-tue-le-alley-oop-spectaculaire-entre-paul-et-jordan.html"
+                        ],
+                        "description": [
+                            "Malgré la large défaite subie contre Golden State (114-98), les Clippers ont offert un peu de plaisir à leurs supporters sur ce alley-oop superbe entre Chris Paul et DeAndre Jordan."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 13:00:02 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "6d43e0c030c3e9374f918135cbbfdca8",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/l-action-qui-tue-le-alley-oop-spectaculaire-entre-paul-et-jordan-31112.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2618"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Miami - Garcia s'en sort contre  Lucic-Baroni"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/miami-garcia-s-en-sort-contre-lucic-baroni.html"
+                        ],
+                        "description": [
+                            "Caroline Garcia a bataillé mais s'est imposée en trois sets (2-6, 61, 6-3) contre la Croate Mirjana Lucic-Baroni au 1er tour du tournoi de Miami. De son côté Eugenie Bouchard a été éliminée d'entrée par Lucie Hradecka (6-4, 3-6, 6-2)."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 12:50:11 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "d343b1da7adfb256af729f0efed91c52",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/miami-garcia-s-en-sort-contre-lucic-baroni-31111.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2192"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Golden State en démonstration contre les Clippers"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/golden-state-en-demonstration-contre-les-clippers.html"
+                        ],
+                        "description": [
+                            "Le duo Steph Curry (33 pts, 5 passes), Klay Thompson (32 pts) n'a laissé aucune chance aux Clippers mercredi soir (114-98)."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 10:50:15 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "6a20dbccc9f345943c384ce9c01f6741",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/golden-state-en-demonstration-contre-les-clippers-31110.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "3564"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Le Daily Zap du 24 mars"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/le-daily-zap-du-24-mars-1.html"
+                        ],
+                        "description": [
+                            "Curry (33 pts) qui mène Golden State à la victoire contre les Clippers, le succès des Spurs contre Miami et des Cavs contre Milwaukee : le résumé des matchs NBA est dans le Daily Zap."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 09:40:16 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "39d90d3927ff0212231975b5f5fbb0b7",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/le-daily-zap-du-24-mars-1-31109.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2335"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - La superbe volée victorieuse de Blaszczykowski"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-la-superbe-volee-victorieuse-de-blaszczykowski.html"
+                        ],
+                        "description": [
+                            "La Pologne a remporté son match amical contre la Serbie mercredi (1-0) grâce à un but du joueur de la Fiorentina Jakub Blaszczykowski sur une magnifique reprise de volée."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 09:40:02 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "45a517aa719dffbb2e2bbe658386b2c6",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-la-superbe-volee-victorieuse-de-blaszczykowski-31108.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1865"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Attentats - Vardy : ''S’assurer que l’Euro sera sécurisé''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/attentats-vardy-s-assurer-que-l-euro-sera-securise.html"
+                        ],
+                        "description": [
+                            "L’international anglais, Jamie Vardy, qui affrontera samedi en Allemagne, la Mannschaft en match amical avec son équipe nationale, a évoqué la sécurité à l’Euro 2016."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 05:50:04 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "b324f278bd00d351c5e97ca3e1059d22",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/attentats-vardy-s-assurer-que-l-euro-sera-securise-31107.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2826"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Opta Quiz avec Benni McCarthy"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/opta-quiz-avec-benni-mccarthy.html"
+                        ],
+                        "description": [
+                            "L’ancien international Sud-Africain, Benni McCarthy, a répondu à un ‘’Quiz Opta’’, au micro de Perform Group."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 05:20:02 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "c9693d7b239e057ff0ee758c6ac669b1",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/opta-quiz-avec-benni-mccarthy-31106.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2009"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Coleman : ''Bale fait partie des meilleurs au monde''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-coleman-bale-fait-partie-des-meilleurs-au-monde.html"
+                        ],
+                        "description": [
+                            "Le Pays de Galles, recevra l’Irlande du nord, en amical jeudi. Son sélectionneur, Chris Coleman, en a profité pour faire l’éloge de son attaquant qui évolue au Real Madrid, Gareth Bale."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 04:00:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "66958c754096850a5d0f88e44dd9a414",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-coleman-bale-fait-partie-des-meilleurs-au-monde-31105.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2117"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Conte : ''Évaluer les joueurs pour l'Euro''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-conte-evaluer-les-joueurs-pour-l-euro.html"
+                        ],
+                        "description": [
+                            "Pour le sélectionneur de l’Italie, Antonio Conte, les matches amicaux contre l’Espagne et l’Allemagne, lui permettront ‘’d’évaluer’’ ses joueurs, en vue de l’Euro 2016 en France."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 03:20:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "94a762b4f18db86826748d77c100675d",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-conte-evaluer-les-joueurs-pour-l-euro-31104.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2100"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Attentats - Conte ''Si nous avons peur, c’est la fin''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/attentats-conte-si-nous-avons-peur-c-est-la-fin.html"
+                        ],
+                        "description": [
+                            "Antonio Conte s’est exprimé en conférence de presse avant la réception de l’Espagne en match amical, jeudi. Le sélectionneur italien y a évoqué les récentes attaques terroristes en Belgique."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 03:20:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "9b57e9523a8d3c2e3dd1cbf696d13809",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/attentats-conte-si-nous-avons-peur-c-est-la-fin-31103.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1854"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "PSG - Materazzi : ''Ibra mérite de gagner la C1''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/psg-materazzi-ibra-merite-de-gagner-la-c1.html"
+                        ],
+                        "description": [
+                            "L’ancien international italien, Marco Materazzi, venu représenter l’Inter Milan pour la présentation des affiches pour la prochaine International Champions Cup, a évoqué le Parisien, Zlatan Ibrahimovic."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 02:20:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "627bacec50c7eba7cbf1b59aeac3c6a0",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/psg-materazzi-ibra-merite-de-gagner-la-c1-31102.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2465"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Espagne - Del Bosque : ''Pas différents de l’Italie''"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/espagne-del-bosque-pas-differents-de-l-italie.html"
+                        ],
+                        "description": [
+                            "Le sélectionneur de l’Espagne, Vicente Del Bosque, a évoqué l’Euro 2016 et son adversaire de jeudi, l’Italie, en conférence de presse, mercredi."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 02:20:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "1d0b99600e73f0ae4a682e1ece75aa2a",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/espagne-del-bosque-pas-differents-de-l-italie-31101.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "3155"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Bleus - Pour quel système opter ..."
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/bleus-pour-quel-systeme-opter.html"
+                        ],
+                        "description": [
+                            "Alors que les présences de Mathieu Valbuena et Karim Benzema pour l’Euro 2016 sont incertaines, le sélectionneur de l’équipe de France, Didier Deschamps, peut s’appuyer sur un effectif polyvalent."
+                        ],
+                        "pubDate": [
+                            "Thu, 24 Mar 2016 01:10:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "c14eb49dfe9e5997bd399e53416fc358",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/bleus-pour-quel-systeme-opter-31100.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "1025"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Stanciu, un bijou et une victoire pour sa première !"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-stanciu-un-bijou-et-une-victoire-pour-sa-premiere.html"
+                        ],
+                        "description": [
+                            "Nicolae Stanciu a parfaitement fêté sa première sélection avec la Roumanie mercredi en inscrivant l’unique but de la rencontre contre la Lituanie (1-0). Le milieu de terrain de 22 ans a déclenché une frappe victorieuse à 30 mètres."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 23:50:02 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "6b828be626850564f3491681f4ee6d20",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-stanciu-un-bijou-et-une-victoire-pour-sa-premiere-31099.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2650"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - La Roumanie assure le minimum contre la Lituanie"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-la-roumanie-assure-le-minimum-contre-la-lituanie.html"
+                        ],
+                        "description": [
+                            "Futur adversaire de l’Equipe de France, la Roumanie s’est imposée ce mercredi en amical contre la Lituanie (1-0). Nicolae Stanciu est l’unique buteur de cette rencontre pauvre en occasions."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 23:30:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "09f2457b031bbfbb4a929ee2077e03e8",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-la-roumanie-assure-le-minimum-contre-la-lituanie-31098.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2873"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Attentats - Löw : \"On ne va pas les laisser nous faire peur\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/attentats-low-on-ne-va-pas-les-laisser-nous-faire-peur.html"
+                        ],
+                        "description": [
+                            "Les récents attentats à Bruxelles ont fait réagir Joachim Löw, qui ne veut pas que le football laisse place à la violence."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 22:00:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "7c826b5219715a95459e0be2d581e034",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/attentats-low-on-ne-va-pas-les-laisser-nous-faire-peur-31097.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "3112"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Löw : \"Schweinsteiger s'est blessé tout seul\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-low-schweinsteiger-s-est-blesse-tout-seul.html"
+                        ],
+                        "description": [
+                            "Joachim Löw a expliqué la nature de la blessure de Bastian Schweinsteiger, qui peut faire une croix sur le prochain Euro en France."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 21:50:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "876a7c969590638d5c3558e64d39e0f9",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-low-schweinsteiger-s-est-blesse-tout-seul-31096.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "3156"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Löw espère voir Götze briller à l'Euro"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-low-espere-voir-gotze-briller-a-l-euro.html"
+                        ],
+                        "description": [
+                            "Mario Götze a la confiance de son sélectionneur Joachim  Löw. Le joueur du Bayern peut déjà faire ses valises pour rejoindre la France et jouer l’Euro 2016 !."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 21:50:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "5880f94da4195002bbe3a6043a2920c3",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-low-espere-voir-gotze-briller-a-l-euro-31095.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "3079"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Amical - Özil ravi de retrouver ses amis anglais"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/amical-ozil-ravi-de-retrouver-ses-amis-anglais.html"
+                        ],
+                        "description": [
+                            "L’Allemagne reçoit ce samedi l’Angleterre en amical, à l’Olympiastadion de Berlin. L’occasion pour Mesut Özil de retrouver certains de ses coéquipiers à Arsenal."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 21:10:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "249a810a5afdc237b2a8bd58239b2953",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/amical-ozil-ravi-de-retrouver-ses-amis-anglais-31094.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2341"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Racing - Travers énumère le calendrier infernal"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/racing-travers-enumere-le-calendrier-infernal.html"
+                        ],
+                        "description": [
+                            "Le Racing d’Henry Chavancy s’apprête à disputer un match relevé samedi contre Toulon, équipe qu’il retrouvera ensuite en Champions Cup."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 19:30:15 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "ae809ca1d20d4a1193d93d8311a700ec",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/racing-travers-enumere-le-calendrier-infernal-31093.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2901"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "19e j. - Chavancy : \"Un retour qui tombe au bon moment\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/19e-j-chavancy-un-retour-qui-tombe-au-bon-moment.html"
+                        ],
+                        "description": [
+                            "Henry Chavancy a quitté l’infirmerie et effectue son retour du côté du Racing 92. Le Centre de 27 ans est donc apte à disputer samedi le match contre Toulon."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 19:00:15 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "a7518f5b1211f46e0549d4cc2f9eaecb",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/19e-j-chavancy-un-retour-qui-tombe-au-bon-moment-31092.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2981"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "19e j. - Chavancy : \"Toujours difficile contre Toulon\""
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/19e-j-chavancy-toujours-difficile-contre-toulon.html"
+                        ],
+                        "description": [
+                            "Le Racing d’Henry Chavancy s’apprête à disputer un match relevé samedi contre Toulon, équipe qu’il retrouvera ensuite en Champions Cup."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 19:00:15 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "d2d9e1eb0a790280f6ade2b9e3495a78",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/19e-j-chavancy-toujours-difficile-contre-toulon-31091.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2945"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "Attentats - Le match Belgique-Portugal délocalisé à Leiria"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/attentats-le-match-belgique-portugal-delocalise-a-leiria.html"
+                        ],
+                        "description": [
+                            "Dans un premier temps annulé pour des raisons de sécurité suite aux attentats de Bruxelles, le match entre la Belgique et le Portugal du 29 mars a finalement été délocalisé à Leira."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 18:50:03 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "48fba47a7f35dfdbe2bbf3f0b1d6c030",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/attentats-le-match-belgique-portugal-delocalise-a-leiria-31090.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2821"
+                                }
+                            }
+                        ]
+                    },
+                    {
+                        "title": [
+                            "TestCase"
+                        ],
+                        "link": [
+                            "http://www.matchendirect.fr/info/testcase.html"
+                        ],
+                        "description": [
+                            "TestCase."
+                        ],
+                        "pubDate": [
+                            "Wed, 23 Mar 2016 18:40:17 +0100"
+                        ],
+                        "guid": [
+                            {
+                                "_": "20abf5e03035c267f1390340f54452a3",
+                                "$": {
+                                    "isPermaLink": "false"
+                                }
+                            }
+                        ],
+                        "enclosure": [
+                            {
+                                "$": {
+                                    "url": "http://www.matchendirect.fr//image/info/100/testcase-31089.jpg",
+                                    "type": "image/jpeg",
+                                    "length": "2031"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
