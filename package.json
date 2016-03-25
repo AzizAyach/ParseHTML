@@ -5,8 +5,9 @@
   , "dependencies": {
       "express": "2.5.8",
       "request": "latest",
+    "cheerio"    : "latest",
       "xml2js"    : "latest",
+      "cors"    : "latest",
       "jade": ">= 0.0.1"
-
   }
 }
