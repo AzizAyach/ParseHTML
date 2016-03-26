@@ -71,7 +71,7 @@ parseString(data, function (err, data) {
 });
 
 
-app.get('/html', function(req, res){
+app.get('/live', function(req, res){
 
 url = 'http://m.besoccer.com/livescore';
 
@@ -79,26 +79,40 @@ request(url, function(error, response, html){
     if(!error){
         var match = [] ;
         var $ = cheerio.load(html);
-    var title, release, rating;
 
-    var json = { equipeD : "", equipeE : "", Score : "",Time : "" };
+   
 
-    $('result result-jugandose').filter(function(){
+
+ $('.table-results.table-results-bets.l').each(function (index,resultat){
+var data = $(this);
+
+
+var cham = data.prev().children().find('strong').text();
+ 
+   var leag  = data.find('.list_partidos.live');
+     leag.each(function(index , resultat){
         var data = $(this);
-        title = data.children().first().text();            
-        release = data.children().last().children().text();
-         console.log(title); 
+        var s = data.parent().find('.tb-more');
+   var temps = data.find('.televisiones').text();
+   var score =data.find('.result.result-jugandose').text();
+   var D = data.find('.nombre_equipo').first().text();
+   var E = data.find('.nombre_equipo').last().text();
+   var teamD = D.replace(/\s\s+/g, ' ');
+  var teamE = E.replace(/\s\s+/g, ' ');
+  var championat = cham;
+   var json = { equipeD : "", equipeE : "", score : "",time : "",competition : ""};
+  json.equipeD = teamD;
+  json.equipeE = teamE;
+  json.score = score ;
+  json.time = temps;
+  json.competition=championat;
+  
+  match.push(json);
+ 
+}) 
 
-        json.title = title;
-        json.release = release;
     })
-
-    $('.result result-jugandose').filter(function(){
-        var data = $(this);
-        rating = data.text();
-console.log(rating); 
-        json.rating = rating;
-    })
+     
 }
 
 // To write to the system we will use the built in 'fs' library.
@@ -107,17 +121,115 @@ console.log(rating);
 // Parameter 2 :  JSON.stringify(json, null, 4) - the data to write, here we do an extra step by calling JSON.stringify to make our JSON easier to read
 // Parameter 3 :  callback function - a callback function to let us know the status of our function
 
-fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
+//fs.writeFile('output.json', JSON.stringify(json, null, 4), function(err){
 
-    console.log('File successfully written! - Check your project directory for the output.json file');
+  //  console.log('File successfully written! - Check your project directory for the output.json file');
 
-})
-
+//
 // Finally, we'll just send out a message to the browser reminding you that this app does not have a UI.
-res.send('Check your console!')
+//res.send('Check your console!')
+res.contentType('application/json');
+res.send(JSON.stringify(match));
 
-    }) ;
+    })
 })
+
+app.get('/info',function(req,res){
+res.contentType('application/json');
+var news = [];
+
+for(var i = 1 ; i <= 2 ;i++)
+{
+
+var url = 'http://m.besoccer.com/news/featured/'+i;
+
+request(url, function(error, response, html){
+    if(!error){
+        var $ = cheerio.load(html);
+  
+
+
+  $('.new-item.click').each(function (index,resultat){
+var data = $(this);
+var figure = data.children('.ni-figure');
+var all = data.children('.ni-info');
+var da = all.children('.ni-data');
+    var date = da.children('.ni-date').text();
+ var titre = all.children('.ni-title').text();
+ var description = all.children('.ni-subtitle').text();
+ var u = figure.attr('href');
+ var url = 'http:'+u;
+ var image = figure.children('.ni-image').attr('src');
+
+   var json = { titre : "", description : "", date : "",image : "",url : ""};
+
+json.date= date;
+json.titre= titre;
+json.description= description;
+json.image= image;
+json.url= url;
+
+      news.push(json);
+      console.log(news.length)
+})
+     
+}
+
+        
+res.send(JSON.stringify(news));
+})
+}
+
+
+})
+
+app.get('/de-info', function(req, res){
+ var url = req.param('url');
+request(url, function(error, response, html){
+    if(!error){
+        var $ = cheerio.load(html);
+   var json = { titre : "", description : "", image : ""}; 
+  var image = $('.ni-image').attr('src');
+  var title = $('.ni-title').text();
+   var description = $('.ni-text-body').find('p').text();
+json.titre = title;
+json.description = description;
+json.image = image;
+      }
+res.contentType('application/json');
+res.send(JSON.stringify(json));
+})
+
+})
+
+
+app.get('/match-day', function(req, res){
+ var url = 'http://m.besoccer.com/leagues';
+ var league = [];
+
+request(url, function(error, response, html){
+    if(!error){
+        var $ = cheerio.load(html);
+ 
+  $('.logo-name').each(function(index,result){
+    var json = { championnat : "", day : ""}; 
+var data = $(this);
+    var champ= data.children('h4').text();
+    var statut = data.children('.league-status');
+    var jou = statut.children('.ls-journey');
+    var day = jou.children('.ls-actual').text();
+    json.championnat = champ;
+    json.day = day ;
+    league.push(json);
+  });
+ 
+      }
+res.contentType('application/json');
+res.send(JSON.stringify(league));
+})
+
+})
+
 
 
 
