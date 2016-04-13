@@ -99,13 +99,17 @@ var cham = data.prev().children().find('strong').text();
    var E = data.find('.nombre_equipo').last().text();
    var teamD = D.replace(/\s\s+/g, ' ');
   var teamE = E.replace(/\s\s+/g, ' ');
+var u =  data.find('.click').attr('data-href');
+var urlmatch ='http:'+u;
+console.log(urlmatch);
   var championat = cham;
-   var json = { equipeD : "", equipeE : "", score : "",time : "",competition : ""};
+   var json = { equipeD : "", equipeE : "", score : "",time : "",competition : "",url : ""};
   json.equipeD = teamD;
   json.equipeE = teamE;
   json.score = score ;
   json.time = temps;
   json.competition=championat;
+json.url = urlmatch;
   
   match.push(json);
  
@@ -230,8 +234,78 @@ res.send(JSON.stringify(league));
 
 })
 
+app.get('/detail-match',function(req,res){
+ req.param('url');
+var url = 'http://m.besoccer.com/match/1461-Trabzon/Elazigspor';
+request(url, function(error, response, html){
+    if(!error){
+        var $ = cheerio.load(html);
+
+   var json = { titre : "", description : "", image : ""}; 
+var data = $('.scoreboard');
+   var Dom = data.find('.sb-team-name').first().text();
+   var Ext = data.find('.sb-team-name').last().text();
+   var time = data.find('.match-live').text();
+   var score = data.find('.match-status.match-directo').nextAll().text();
+console.log(Dom);
+console.log(Ext);
+console.log(time);
+console.log(score);
+
+      }
+res.contentType('application/json');
+res.send(JSON.stringify(json));
+})
 
 
+
+
+});
+
+app.get('/favoris',function(req,res){
+url = 'http://m.besoccer.com';
+
+request(url, function(error, response, html){
+    if(!error){
+        var match = [] ;
+        var $ = cheerio.load(html);
+
+ $('.table-results.table-results-bets.l').each(function (index,resultat){
+var data = $(this);
+var cham = data.prev().children().find('strong').text();
+   var leag  = data.find('.list_partidos');
+    leag.each(function(index , resultat){
+    var data = $(this);
+    var s = data.parent().find('.tb-more');
+   var temps = data.find('.result.chk_hour.chk_hour').text();
+   var score =data.find('.result.result-finalizado').text();
+   var D = data.find('.nombre_equipo').first().text();
+   var E = data.find('.nombre_equipo').last().text();
+   var teamD = D.replace(/\s\s+/g, ' ');
+  var teamE = E.replace(/\s\s+/g, ' ');
+  var u =  data.find('.click').attr('data-href');
+var urlmatch ='http:'+u;
+
+  var championat = cham;
+console.log(cham , temps);
+   var json = { equipeD : "", equipeE : "", score : "",time : "",competition : "",url : "",date: ""};
+  json.equipeD = teamD;
+  json.equipeE = teamE;
+  json.score = score ;
+  json.time = temps;
+  json.competition=championat;
+json.url = urlmatch;
+  
+  match.push(json);
+ 
+}) 
+
+    })
+
+}
+res.send(JSON.stringify(match));
+});
+});
 
 var port = Number (process.env.PORT || 3000)
 app.listen(port, function(){
