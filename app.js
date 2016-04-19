@@ -217,7 +217,7 @@ request(url, function(error, response, html){
  
   $('.logo-name').each(function(index,result){
     var json = { championnat : "", day : ""}; 
-var data = $(this);
+    var data = $(this);
     var champ= data.children('h4').text();
     var statut = data.children('.league-status');
     var jou = statut.children('.ls-journey');
@@ -236,23 +236,177 @@ res.send(JSON.stringify(league));
 
 app.get('/detail-match',function(req,res){
  req.param('url');
-var url = 'http://m.besoccer.com/match/1461-Trabzon/Elazigspor';
+var url = 'http://m.besoccer.com/match/Chelsea-Sub-19/Anderlecht-Sub-19';
+var goalgame = [] ;
+var substi = [];
+var cardgame = [] ;
 request(url, function(error, response, html){
     if(!error){
         var $ = cheerio.load(html);
 
-   var json = { titre : "", description : "", image : ""}; 
+var league = $('.shorted.uppercase').text().trim();
+var table = $('.estadisticas');
 var data = $('.scoreboard');
-   var Dom = data.find('.sb-team-name').first().text();
-   var Ext = data.find('.sb-team-name').last().text();
+var goal = $('.list_events.goals').slice(0).eq(0);
+var card = $('.list_events.goals').slice(1).eq(0);
+var subst = $('.list_events.goals').slice(2).eq(0);
+   var Dom = data.find('.sb-team-name').first().text().trim();
+   var Ext = data.find('.sb-team-name').last().text().trim();
    var time = data.find('.match-live').text();
-   var score = data.find('.match-status.match-directo').nextAll().text();
-console.log(Dom);
-console.log(Ext);
-console.log(time);
-console.log(score);
+   var s = data.find('.board').find('li').first().text();
+   var l = s.length;
+   var scoreDom = s.substr(l-1, l);
+   var scoreExt = data.find('.board').find('li').last().text();
+   var possesionDom = table.find('.stats').find('td').first().text().trim();
+   var possesionExt= table.find('.stats').find('td').last().text().trim();
+
+
+   var targetDom= table.find('.stats_1_file').find('td').slice(0).eq(0).text();
+   var targetExt= table.find('.stats_1_file').find('td').slice(2).eq(0).text();
+
+   var offtargetDom= table.find('.stats_1_file').find('td').slice(3).eq(0).text();
+   var offtargetExt= table.find('.stats_1_file').find('td').slice(5).eq(0).text();
+
+
+   var SavesDom= table.find('.stats_1_file').find('td').slice(9).eq(0).text();
+   var SavesExt= table.find('.stats_1_file').find('td').slice(11).eq(0).text();
+
+   var CornerDom= table.find('.stats_1_file').find('td').slice(12).eq(0).text();
+   var CornerExt= table.find('.stats_1_file').find('td').slice(14).eq(0).text();
+
+
+   var OffsideDom = table.find('.stats_1_file').find('td').slice(13).eq(0).text();
+   var OffsideExt = table.find('.stats_1_file').find('td').slice(15).eq(0).text();
+
+   var YellowDom= table.find('.stats_1_file').find('td').slice(16).eq(0).text();
+   var YellowExt= table.find('.stats_1_file').find('td').slice(18).eq(0).text();
+
+   var REDDom= table.find('.stats_1_file').find('td').slice(19).eq(0).text();
+   var REDExt= table.find('.stats_1_file').find('td').slice(21).eq(0).text();
+
+   var FoalDom= table.find('.stats_1_file').find('td').slice(22).eq(0).text();
+   var FoalExt= table.find('.stats_1_file').find('td').slice(24).eq(0).text();
+ var json = { League : "" ,TeamDom : "", TeamExt : "", Time : "" , ScoreDom : "" , ScoreExt : "" , PossDom : "" , PossExt : "" , TargetDom : "" ,
+  TargetExt : "" , OfftargetDom : "" , OfftargetExt : "" , SavesDom : ""  , SavesExt : "" , CornerDom : "" , CornerExt : "" , OffsideDom : "" ,
+   OffsideExt : "" , YellowDom : "" , YellowExt : "" , REDDom : "" , REDExt : "" , FoalDom : "" , FoalExt: "", Goal: "", Card: "", Sub: "" }; 
+json.League = league;
+json.TeamDom = Dom;
+json.TeamExt = Ext;
+json.Time = time;
+json.ScoreDom = scoreDom;
+json.ScoreExt = scoreExt;
+json.PossDom = possesionDom;
+json.PossExt = possesionExt;
+json.TargetDom = targetDom;
+json.TargetExt = targetExt;
+json.OfftargetDom = offtargetDom;
+json.OfftargetExt = offtargetExt;
+json.SavesDom = SavesDom;
+json.SavesExt = SavesExt;
+json.CornerDom = CornerDom;
+json.CornerExt = CornerExt;
+json.OffsideDom = OffsideDom;
+json.OffsideExt= OffsideExt;
+json.YellowDom= YellowDom;
+json.YellowExt = YellowExt;
+json.REDDom= REDDom;
+json.REDExt = REDExt;
+json.FoalDom= FoalDom;
+json.FoalExt = FoalExt;
+
+console.log(league);
+
+
+
+
+
+
+goal.children('.row').each(function(index,result){
+    var json = { Joueur : "", Time : "" ,Equipe: ""}; 
+    var data = $(this);
+     var joueur= data.find('h4').text().trim();
+     var time = data.find('span').last().text().trim();
+     var equipe = '';
+     var subtleft = data.find('.box.box-left').text().trim();
+if(subtleft.length == 0)
+{
+equipe = 'Away';
+}
+else{
+equipe = 'Home' ;
+
+
+
+}
+    json.Joueur = joueur;
+    json.Time = time ;
+    json.Equipe= equipe ;
+
+ 
+  
+    goalgame.push(json);
+  });
+
+
+card.children('.row').each(function(index,result){
+    var json = { Joueur : "", Time : "" ,Type : "" ,Equipe: ""}; 
+    var data = $(this);
+    var joueur= data.find('h4').text().trim();
+    var time = data.find('span').first().text().trim();
+    var type = data.find('span').last().text().trim();
+
+   var equipe = '';
+     var subtleft = data.find('.box.box-left').text().trim();
+if(subtleft.length == 0)
+{
+equipe = 'Away';
+}
+else{
+equipe = 'Home' ;
+
+
+
+}
+
+    json.Joueur = joueur;
+    json.Time = time ;
+    json.Type = type ;
+     json.Equipe= equipe ;
+  cardgame.push(json);
+
+  });
+
+subst.children('.row').each(function(index,result){
+  var json = { Joueur : "", Time : "" ,Equipe: ""}; 
+    var data = $(this);
+    var equipe ='' ;
+    var subtleft = data.find('.box.box-left').text().trim();
+if(subtleft.length == 0)
+{
+equipe = 'Away';
+}
+else{
+equipe = 'Home' ;
+
+
+
+}
+    var joueur= data.find('h4').text().trim();
+     var time = data.find('span').last().text().trim();
+     json.Joueur = joueur;
+     json.Time = time ;
+      json.Equipe= equipe ;
+      console.log(equipe);
+      substi.push(json);
+  });
+
 
       }
+
+json.Goal = goalgame ;
+json.Card = cardgame ;
+json.Sub = substi ;
+
 res.contentType('application/json');
 res.send(JSON.stringify(json));
 })
