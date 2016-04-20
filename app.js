@@ -284,8 +284,8 @@ var subst = $('.list_events.goals').slice(2).eq(0);
    var REDDom= table.find('.stats_1_file').find('td').slice(21).eq(0).text();
    var REDExt= table.find('.stats_1_file').find('td').slice(23).eq(0).text();
 
-   var FoalDom= table.find('.stats_1_file').find('td').slice(22).eq(0).text();
-   var FoalExt= table.find('.stats_1_file').find('td').slice(24).eq(0).text();
+   var FoalDom= table.find('.stats_1_file').find('td').slice(24).eq(0).text();
+   var FoalExt= table.find('.stats_1_file').find('td').slice(26).eq(0).text();
  var json = { League : "" ,TeamDom : "", TeamExt : "", Time : "" , ScoreDom : "" , ScoreExt : "" , PossDom : "" , PossExt : "" , TargetDom : "" ,
   TargetExt : "" , OfftargetDom : "" , OfftargetExt : "" , SavesDom : ""  , SavesExt : "" , CornerDom : "" , CornerExt : "" , OffsideDom : "" ,
    OffsideExt : "" , YellowDom : "" , YellowExt : "" , REDDom : "" , REDExt : "" , FoalDom : "" , FoalExt: "", Goal: "", Card: "", Sub: "" }; 
