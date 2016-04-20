@@ -235,8 +235,8 @@ res.send(JSON.stringify(league));
 })
 
 app.get('/detail-match',function(req,res){
- req.param('url');
-var url = 'http://m.besoccer.com/match/Chelsea-Sub-19/Anderlecht-Sub-19';
+
+var url =  req.param('url');
 var goalgame = [] ;
 var substi = [];
 var cardgame = [] ;
