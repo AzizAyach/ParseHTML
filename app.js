@@ -275,14 +275,14 @@ var subst = $('.list_events.goals').slice(2).eq(0);
    var CornerExt= table.find('.stats_1_file').find('td').slice(14).eq(0).text();
 
 
-   var OffsideDom = table.find('.stats_1_file').find('td').slice(13).eq(0).text();
-   var OffsideExt = table.find('.stats_1_file').find('td').slice(15).eq(0).text();
+   var OffsideDom = table.find('.stats_1_file').find('td').slice(15).eq(0).text();
+   var OffsideExt = table.find('.stats_1_file').find('td').slice(17).eq(0).text();
 
-   var YellowDom= table.find('.stats_1_file').find('td').slice(16).eq(0).text();
-   var YellowExt= table.find('.stats_1_file').find('td').slice(18).eq(0).text();
+   var YellowDom= table.find('.stats_1_file').find('td').slice(18).eq(0).text();
+   var YellowExt= table.find('.stats_1_file').find('td').slice(20).eq(0).text();
 
-   var REDDom= table.find('.stats_1_file').find('td').slice(19).eq(0).text();
-   var REDExt= table.find('.stats_1_file').find('td').slice(21).eq(0).text();
+   var REDDom= table.find('.stats_1_file').find('td').slice(21).eq(0).text();
+   var REDExt= table.find('.stats_1_file').find('td').slice(23).eq(0).text();
 
    var FoalDom= table.find('.stats_1_file').find('td').slice(22).eq(0).text();
    var FoalExt= table.find('.stats_1_file').find('td').slice(24).eq(0).text();
