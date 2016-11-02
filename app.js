@@ -35,7 +35,7 @@ app.configure('development', function(){
 app.configure('production', function(){
   app.use(express.errorHandler());
 });
-
+//websiteparssing
 
 
 // Routes
@@ -139,20 +139,14 @@ res.send(JSON.stringify(match));
 })
 
 app.get('/info',function(req,res){
-res.contentType('application/json');
 var news = [];
-
 for(var i = 1 ; i <= 2 ;i++)
 {
-
 var url = 'http://m.besoccer.com/news/featured/'+i;
 
 request(url, function(error, response, html){
     if(!error){
         var $ = cheerio.load(html);
-  
-
-
   $('.new-item.click').each(function (index,resultat){
 var data = $(this);
 var figure = data.children('.ni-figure');
@@ -164,27 +158,20 @@ var da = all.children('.ni-data');
  var u = figure.attr('href');
  var url = 'http:'+u;
  var image = figure.children('.ni-image').attr('src');
-
    var json = { titre : "", description : "", date : "",image : "",url : ""};
-
 json.date= date;
 json.titre= titre;
 json.description= description;
 json.image= image;
 json.url= url;
-
       news.push(json);
       console.log(news.length)
 })
-     
 }
-
-        
+    res.contentType('application/json');
 res.send(JSON.stringify(news));
 })
 }
-
-
 })
 
 app.get('/de-info', function(req, res){
